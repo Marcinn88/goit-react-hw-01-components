@@ -37,7 +37,7 @@ export const Profile =({
       <span className="quantity">{likes}</span>
     </li>
   </ul>
-</div>);
+</div>)
 
 Profile.propTypes = {
     username: PropTypes.string.isRequired,
