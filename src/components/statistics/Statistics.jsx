@@ -1,5 +1,5 @@
-// import React from "react";
-// import css from './Statistics.css';
+import React from "react";
+import css from './Statistics.css';
 import PropTypes from "prop-types";
 
 const randomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
