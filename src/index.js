@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Profile } from './components/Profile/Profile';
+// import { Profile } from './components/Profile/Profile';
 import { Statistics } from './components/statistics/Statistics';
 import { FriendList } from './components/FriendList/FriendList';
 import {TransactionHistory} from './components/TransactionHistory/TransactionHistory'
@@ -18,11 +18,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       location={user.location}
       avatar={user.avatar}
       stats={user.stats}
-    />
+    /> */}
 
   <Statistics title="Upload stats" stats={data} />
   <Statistics stats={data} />
   <FriendList friends={friends} />
-  <TransactionHistory items={transactions} /> */}
+  <TransactionHistory items={transactions} />
   </React.StrictMode>
 );
