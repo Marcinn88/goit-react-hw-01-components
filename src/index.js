@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Statistics } from "./components/Statistics/Statistics";
+import { Statistics } from "./components/statistics/Statistics";
 import { FriendList } from "./components/FriendList/FriendList";
 import { TransactionHistory } from "./components/TransactionHistory/TransactionHistory";
-import { Profile } from "./components/Profile/Profile";
+import { Profile } from "./components/profile/Profile";
 import "./index.css";
 import user from "./data/user.json";
 import data from "./data/data.json";
@@ -26,3 +26,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     />
   </React.StrictMode>
 );
+
