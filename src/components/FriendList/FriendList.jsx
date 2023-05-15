@@ -1,5 +1,7 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { FriendListItem } from '../FriendListItem/FriendListItem';
+import css from './FriendList.css'
 
 export const FriendList = ({friends}) => (
     <ul className="friend-list">
@@ -13,3 +15,9 @@ export const FriendList = ({friends}) => (
         ))}
     </ul>
 );
+
+FriendList.propTypes = {
+    avatar: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+  };

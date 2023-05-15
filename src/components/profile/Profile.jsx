@@ -1,5 +1,6 @@
-import React from "react"
+import React from "react";
 import PropTypes from "prop-types";
+import css from './Profile.css';
 
 
 
@@ -18,7 +19,7 @@ export const Profile =({
       className="avatar"
     />
     <p className="name">{username}</p>
-    <p className="tag">{tag}</p>
+    <p className="tag">@{tag}</p>
     <p className="location">{location}</p>
   </div>
 

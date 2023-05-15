@@ -1,7 +1,8 @@
-import React from "react"
-// import PropTypes from "prop-types";
+import React from "react";
+import css from './Statistics.css';
+import PropTypes from "prop-types";
 
-const randomHexColor = () => {Math.floor(Math.random() * 16777215).toString(16)};
+const randomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
 export const Statistics = ({ title = 'Upload stats', stats }) => {
     randomHexColor()
@@ -23,3 +24,13 @@ export const Statistics = ({ title = 'Upload stats', stats }) => {
       </section>
     );
   }
+
+  Statistics.propTypes = {
+    title: PropTypes.string,
+    stats: PropTypes.arrayOf(
+      PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired,
+      })
+    ).isRequired,
+  };
