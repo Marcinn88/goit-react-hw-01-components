@@ -9,7 +9,7 @@ export const Profile =({
     tag,
     location,
     avatar,
-    stats:{followers, views, likes},
+    stats:{followers, views, likes}
 }) => (
 <div className="profile">
   <div className="description">
@@ -37,7 +37,7 @@ export const Profile =({
       <span className="quantity">{likes}</span>
     </li>
   </ul>
-</div>)
+</div>);
 
 // Profile.propTypes = {
 //     username: PropTypes.string.isRequired,
