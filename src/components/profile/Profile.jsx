@@ -12,7 +12,7 @@ export const Profile =({
     stats:{followers, views, likes}
 }) => (
 <div className="profile">
-  <div className="description">
+  {/* <div className="description">
     <img
       src={avatar}
       alt="User avatar"
@@ -36,7 +36,7 @@ export const Profile =({
       <span className="label">Likes</span>
       <span className="quantity">{likes}</span>
     </li>
-  </ul>
+  </ul> */}
 </div>);
 
 // Profile.propTypes = {
