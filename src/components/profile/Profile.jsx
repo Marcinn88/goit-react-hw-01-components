@@ -10,7 +10,7 @@ export const Profile =({
     location,
     avatar,
     stats:{followers, views, likes},
-})=>(
+}) => (
 <div className="profile">
   <div className="description">
     <img

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import { App } from 'components/App';
 import { Profile } from './components/Profile/Profile';
 import { Statistics } from './components/statistics/Statistics';
 import { FriendList } from './components/FriendList/FriendList';
