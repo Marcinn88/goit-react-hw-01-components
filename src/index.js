@@ -12,7 +12,7 @@ import transactions from './data/transactions.json';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Profile
+    {/* <Profile
       username={user.username}
       tag={user.tag}
       location={user.location}
@@ -23,6 +23,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <Statistics title="Upload stats" stats={data} />
   <Statistics stats={data} />
   <FriendList friends={friends} />
-  <TransactionHistory items={transactions} />
+  <TransactionHistory items={transactions} /> */}
   </React.StrictMode>
 );
