@@ -11,8 +11,6 @@ import data from "../data/data.json";
 import friends from "../data/friends.json";
 import transactions from "../data/transactions.json";
 
-import css from "../components/TransactionHistory/TransactionHistory.module.css";
-
 export const App = () => {
   return (
     <div
