@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 
 import { Statistics } from "./statistics/Statistics"; 
 import { FriendList } from "./FriendList/FriendList";
