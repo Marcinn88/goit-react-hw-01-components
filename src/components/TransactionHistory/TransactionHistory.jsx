@@ -1,9 +1,10 @@
 // import React from "react";
 import PropTypes from "prop-types";
-import "./TransactionHistory.css";
+import css from "./TransactionHistory.module.css";
 
-export const TransactionHistory = ({ items }) => (
-    <table className="transaction-history">
+export const TransactionHistory = ({ items }) => {
+  return (
+    <table className={css.transactionHistoryClass}>
   <thead>
     <tr>
       <th>Type</th>
@@ -24,7 +25,7 @@ export const TransactionHistory = ({ items }) => (
 
   </tbody>
     </table>
-);
+)};
 
 TransactionHistory.prototype = {
   type: PropTypes.string,

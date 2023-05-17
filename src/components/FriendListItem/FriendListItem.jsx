@@ -1,16 +1,16 @@
 // import React from "react";
 import PropTypes from "prop-types";
-import "./FriendListItem.css";
+import css from"./FriendListItem.module.css";
 
 export const FriendListItem = ({
     isOnline,
     avatar,
     name
     }) => (
-        <li className="item">
-            <span className={isOnline===true?'statusOn':'statusOff'}>{isOnline}</span>
-            <img className="avatar" src={avatar} alt="User avatar" width="48" />
-            <p className="name">{name}</p>
+        <li className={css.item}>
+            <span className={isOnline ? css.statusOn : css.statusOff}>{isOnline}</span>
+            <img className={css.avatar} src={avatar} alt="User avatar" width="48"/>
+            <p className={css.name}>{name}</p>
         </li>
 );
 
