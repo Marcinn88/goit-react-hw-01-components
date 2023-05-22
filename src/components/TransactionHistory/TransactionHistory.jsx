@@ -27,7 +27,7 @@ export const TransactionHistory = ({ items }) => {
     </table>
 )};
 
-TransactionHistory.prototype = {
+TransactionHistory.propTypes = {
   type: PropTypes.string,
   amount: PropTypes.number,
   currency: PropTypes.string,
